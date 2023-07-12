@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1A3BzEbyJ-drN6yL01J9M3MrUTdZt5Jqi
 """
 
-from IPython.core.prefilter import PrefilterError
 # 22-23 시즌 토트넘 소속 선수 전력분석
 import pandas as pd
 import matplotlib.pyplot as plt
