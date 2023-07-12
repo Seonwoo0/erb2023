@@ -194,7 +194,3 @@ def stat(name):
     fig.suptitle('Analysis')
     plt.tight_layout()
     plt.show()
-
-
-a = input('분석할 선수의 이름을 입력하시오: ')
-stat(a)
