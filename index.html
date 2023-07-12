@@ -1,18 +1,22 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>백선우 집</title>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<title>토트넘 선수 분석하기</title>
+  <py-env>
+        - numpy
+        - matplotlib
+        - paths:
+          - /data.py
+      </py-env>
 </head>
 <body>
-<h1>백선우의 홈페이지</h1>
-  <a href = "chat0.html">챗봇</a><br>
-  <a href = "https://maehol.hs.kr">매홀고</a><br>
-  <a href = "https://seoultech.ac.kr">서울과기대</a><br>
-  <a href = "sum.html">sum</a><br>
-  <a href = "https://how99909.github.io/erd2023/">권택영 집</a><br>
-  <a href = "https://tetris.com/play-tetris/?utm_source=top_nav_link&utm_medium=webnav&utm_campaign=playNow_btm_tst&utm_content=text_play_now">tetris</a><br>
-<img src = "logo_on.svg">
-<h1>마시쪙</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ImapK-6lOvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <img src = "tottenham.png">
+  <div id="plot"></div>
+    <py-script output="plot">
+a = input('분석할 선수의 이름을 입력하시오: ')
+stat(a)
+
 </body>
 </html>
