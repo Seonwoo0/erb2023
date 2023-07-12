@@ -14,7 +14,10 @@
   <body>
     <img src = "tottenham.png">
     <div id="plot"></div>
-      <py-script>
+      <py-script output = "plot">
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        from Tottenham_analysis import stat
         stat(input('분석할 선수의 이름을 입력하시오: '))
       </py-script>
   </body>
